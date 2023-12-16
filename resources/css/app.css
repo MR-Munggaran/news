@@ -1,0 +1,24 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    font-family: "Inter", sans-serif;
+}
+
+.burger-line {
+    @apply w-[30px] h-[2px] my-2 block bg-white;
+}
+
+.burger-active > span:nth-child(1) {
+    @apply rotate-45;
+}
+
+.burger-active > span:nth-child(2) {
+    @apply scale-0;
+}
+
+.burger-active > span:nth-child(3) {
+    @apply -rotate-45;
+}
