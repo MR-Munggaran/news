@@ -7,7 +7,7 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
-##Berikut Linknya: startnews.site 
+## Berikut Linknya: startnews.site 
 <br>
 !!Catatan : saya tidak tau pak bisa dibuka atau tidak, terima kasih
 
