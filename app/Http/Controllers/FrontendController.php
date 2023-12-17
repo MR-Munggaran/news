@@ -29,8 +29,7 @@ class FrontendController extends Controller
         $topArtikelFirst = Artikel::orderByDesc('views')->first();
         $artikelterakhir = Artikel::latest()->skip(1)->take(5)->get();
         $artikelnanggung = Artikel::latest()->first();
-
-        // $visitor = Visitor::hit();
+        $visitor = Visitor::hit();
         // dd($slidepertama, $slidekedua);
         return view('front.home')->with([
             'kategori' => $kategori,

@@ -11,11 +11,7 @@ use App\Models\Kategori;
 
 class KategoriController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
+
     public function index()
     {
         $kategori = Kategori::all();
@@ -32,13 +28,7 @@ class KategoriController extends Controller
     {
         return view('back.kategori.create');
     }
-
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
+    
     public function store(Request $request)
     {
         $this->validate($request,[
@@ -55,36 +45,12 @@ class KategoriController extends Controller
         
     }
 
-    /**
-     * Display the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function show($id)
-    {
-        //
-    }
-
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
     public function edit($id)
     {
         $kategori = Kategori::find($id);
         return view('back.kategori.edit')->with("kategori", $kategori);
     }
 
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
     public function update(Request $request, $id)
     {
         $data = $request->all();
@@ -95,13 +61,7 @@ class KategoriController extends Controller
         // Alert::info('Berhasil', 'Berhasil Diupdate');
         return redirect()->route('kategori.index');
     }
-    
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
+
     public function destroy($id)
     {
         $kategori = Kategori::find($id);

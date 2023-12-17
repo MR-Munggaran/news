@@ -45,4 +45,5 @@ Route::resource('kategori', KategoriController::class)->middleware('auth');
 Route::resource('artikel', ArtikelController::class)->middleware('auth');
 Route::resource('materi', MateriController::class)->middleware('auth');
 Route::resource('slide', SlideController::class)->middleware('auth');
-Route::get('user', [ProfileController::class])->name('profile')->middleware('auth');
+Route::get('profile', [ProfileController::class, 'index'])->name('profile')->middleware('auth');
+Route::get('/buat', [ProfileController::class, 'create'])->name('create')->middleware('auth');
