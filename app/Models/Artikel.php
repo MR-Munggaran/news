@@ -25,7 +25,7 @@ class Artikel extends Model
      */
     public function kategori(): BelongsTo
     {
-        return $this->belongsTo(kategori::class, 'kategori_id', 'id');
+        return $this->belongsTo(Kategori::class, 'kategori_id', 'id');
     }
     /**
      * Get the user that owns the Artikel

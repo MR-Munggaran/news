@@ -34,7 +34,7 @@
                         /></a>
                       </div>
                       <div class="w-2/3 pl-3">
-                        <a href="isi.html">
+                        <a href="{{route('detail', $data->slug)}}">
                           <p
                             class="text-[0.50rem] phone:text-[0.60rem] md:text-sm"
                           >
@@ -51,7 +51,7 @@
                           {{$data->formatted_created_at}}
                           </p>
                           <p
-                            class="hidden text-justify md:block text-gray-400 text-[0.60rem] sm:text-[0.65rem] xl:text-[0.93rem] xl:mt-2"
+                            class="hidden text-justify sm:block text-gray-400 text-[0.60rem] sm:text-[0.65rem] xl:text-[0.93rem] xl:mt-2"
                           >
                           {!! Str::limit($data->content, 150) !!}
                           </p>
@@ -93,21 +93,7 @@
         </div>
       </div>
 
-      <footer class="bg-black pt-24 pb-12">
-        <div class="container">
-          <div class="flex flex-wrap">
-            <div class="w-full px-4 mb-12 text-slate-300 font-medium md:w-1/2">
-              <a href="home.html" class="block py-6"
-                ><img src="{{asset('Tailwind/src/pic')}}/logo.png" alt="logo"
-              /></a>
-              <h3 class="font-bold text-2xl mb-2">Contact Us!</h3>
-              <p>Startandplay@gmail.com</p>
-              <p>Jl. Kebaikan No. 69, South Tangerang</p>
-              <p>08123456789</p>
-            </div>
-          </div>
-        </div>
-      </footer>
+      @include('front.includes.footer')
     </section>
 
     <!-- Hero End -->

@@ -9,6 +9,7 @@ use App\Http\Controllers\SlideController;
 use App\Http\Controllers\FrontendController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\LoginController;
+use App\Http\Controllers\SearchController;
 
 /*
 |--------------------------------------------------------------------------
@@ -34,6 +35,8 @@ Route::get('/kategori/{id}', [FrontendController::class, 'Kategori'])->name('kat
 
 Route::get('/login', [LoginController::class, 'index'])->name('login');
 Route::post('actionlogin', [LoginController::class, 'store'])->name('actionlogin');
+Route::get('/autocomplete', [SearchController::class, 'autocomplete']);
+
 
 // Route::get('/dashboard', [DashboardController::class, 'index'])->name('Dashboard')->middleware('auth');
 Route::get('logout', [LoginController::class, 'logout'])->name('logout')->middleware('auth');

@@ -1,14 +1,14 @@
-<div class="hidden col-span-1 md:col-span-1 xl:block">
+<div class="hidden col-span-1 xl:block">
     <h2 class="text-xl font-bold mb-2 md:block md:border-b-2">
         Recent
     </h2>
-    @foreach($recentArtikels as $data)
     <div class="mt-4 col-span-1 row-span-2 relative">
-        <ul class="grid gap-3">
+      <ul class="grid gap-3">
+          @foreach($recentArtikels as $data)
                   <li class="flex relative">
                     <a href="{{route('detail', $data->slug)}}">
                     <div class="w-24 phone:w-1/3">
-                      <img class="w-full" src="{{asset('uploads/' . $data->gambar)}}" alt="" />
+                      <img class="w-full" src="{{asset('uploads/' . $data->gambar)}}" alt="" /></a>
                       <a
                         href="{{ route('kategorishow', $data->kategori_id) }}"
                         class="hidden absolute phone:block phone:bottom-1 phone:left-1.5 text-[0.52rem] bg-blue-500 text-light p-1 sm:text-[0.65rem] md:text-sm lg:text-[0.70rem] lg:py-[0.15rem] xl:py-0">{{$data->kategori->nama}}</a
@@ -21,9 +21,9 @@
                     </div>
                     </a>
                   </li>
+                  @endforeach
                 </ul>
             </div>
-            @endforeach
         </div>
         <!-- <li class="flex relative">
           <div class="w-24 phone:w-1/3">

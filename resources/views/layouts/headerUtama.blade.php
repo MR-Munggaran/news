@@ -114,14 +114,16 @@
                 <hr>
                 <hr>
                 <hr>
-                <li class="group hidden lg:block">
-                  <input
-                    type="text"
-                    id="search-navbar"
-                    class="py-2 ps-10 text-sm rounded-full"
-                    placeholder="Search..."
-                  />
-                </li>
+                <div class="group hidden lg:block">
+                    <input
+                        type="text"
+                        id="search_data"
+                        class="py-2 ps-10 text-sm rounded-full"
+                        placeholder="Search..."
+                    />
+                    <ul id="search-results" class="bg-white absolute w-1/5 mx-5 my-5 "></ul>
+                </div>
+                
               </ul>
             </nav>
           </div>

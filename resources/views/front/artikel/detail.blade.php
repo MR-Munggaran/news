@@ -68,6 +68,7 @@
                     <ul class="grid gap-3">
                     @foreach($related as $post)
                       <li class="flex relative">
+                        <a href="{{route('detail', $post->slug)}}">
                         <div class="w-24 phone:w-1/3 lg:w-1/2">
                           <img class="w-full" src="{{asset('uploads/' . $post->gambar)}}" alt="" />
                           <a
@@ -99,6 +100,7 @@
                           </p>
                         </div>
                       </li>
+                      </a>
                       @endforeach
                       <!-- <li class="flex relative">
                         <div class="w-24 phone:w-1/3 lg:w-1/2">
@@ -262,20 +264,6 @@
         </div>
       </div>
 
-      <footer class="bg-black pt-24 pb-12">
-        <div class="container">
-          <div class="flex flex-wrap">
-            <div class="w-full px-4 mb-12 text-slate-300 font-medium md:w-1/2">
-              <a href="home.html" class="block py-6"
-                ><img src="src/pic/logo.png" alt="logo"
-              /></a>
-              <h3 class="font-bold text-2xl mb-2">Contact Us!</h3>
-              <p>Startandplay@gmail.com</p>
-              <p>Jl. Kebaikan No. 69, South Tangerang</p>
-              <p>08123456789</p>
-            </div>
-          </div>
-        </div>
-      </footer>
+      @include('front.includes.footer')
     </section>
 @endsection

@@ -24,7 +24,7 @@
   <body>
   <section class="bg-orange-300 dark:bg-gray-900 flex-container h-screen pt-10 py-10">
       <div class="flex flex-col items-center justify-center px-6 py-8 mx-auto md:h-screen lg:py-0">
-        <a href="#" class="flex items-center mb-6 text-2xl font-semibold text-gray-900 dark:text-white">
+        <a href="{{ route('home') }}" class="flex items-center mb-6 text-2xl font-semibold text-gray-900 dark:text-white">
           <img src="{{asset('component/Logo.png')}}" alt="Hero Image" class="w-full h-auto" />
         </a>
         @if(session('error'))

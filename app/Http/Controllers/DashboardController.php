@@ -22,11 +22,13 @@ class DashboardController extends Controller
         $artikelCount = Artikel::count();
         $materiCount = Materi::count();
         $visitorCount = Visitor::count();
+        $artikel = Artikel::orderBy('views', 'desc')->take(5)->get();;
         return view('back.dashboard')->with([
             'materiCount' => $materiCount,
             'artikelCount' => $artikelCount,
             'kategoriCount' => $kategoriCount,
             'visitorCount' => $visitorCount,
+            'artikel' => $artikel
         ]);
     }
 

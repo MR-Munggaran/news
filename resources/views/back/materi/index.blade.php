@@ -81,7 +81,7 @@
       
          <nav class="flex items-center flex-column flex-wrap md:flex-row justify-center pt-2" aria-label="Table navigation">
             <ul class="inline-flex -space-x-px rtl:space-x-reverse text-sm h-8 justify-center">
-                <li>
+                <!-- <li>
                     <a href="#" class="flex items-center justify-center px-3 h-8 ms-0 leading-tight text-gray-500 bg-gray-900 border border-gray-300 rounded-s-lg hover:bg-gray-700 hover:text-redish  dark:border-gray-700 dark:text-gray-400  ">Previous</a>
                 </li>
                 <li>
@@ -101,7 +101,7 @@
                 </li>
                 <li>
                     <a href="#" class="flex items-center justify-center px-3 h-8 leading-tight text-gray-500 bg-gray-900 border border-gray-300 rounded-e-lg hover:bg-gray-700 hover:text-redish  dark:border-gray-700 dark:text-gray-400  ">Next</a>
-                </li>
+                </li> -->
             </ul>
             
             

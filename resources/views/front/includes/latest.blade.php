@@ -50,7 +50,7 @@
                         >
                       </div>
                       <div class="w-2/3 pl-3">
-                        <a href="isi.html"
+                        <a href="{{route('detail', $data->slug)}}"
                           ><p
                             class="text-[0.50rem] phone:text-[0.60rem] md:text-sm"
                           >

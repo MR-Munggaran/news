@@ -29,12 +29,14 @@ class Visitor extends Model
             $visitor->increment('hits');
 
             // Jika tanggal kunjungan berbeda, tambahkan entri baru
-            $visitDate = date_create($visitor->visit_date);
-            if (date_format($visitDate, 'd') != date('d')) {
+            $lastVisitDate = new \DateTime($visitor->visit_date);
+            $currentDate = now();
+    
+            if ($lastVisitDate->format('Y-m-d') != $currentDate->format('Y-m-d')) {
                 self::create([
                     'ip'         => request()->ip(),
                     'hits'       => 1,
-                    'visit_date' => now(),
+                    'visit_date' => $currentDate,
                 ]);
             }
         }
