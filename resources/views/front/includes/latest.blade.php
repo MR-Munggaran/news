@@ -13,7 +13,7 @@
                     </div>
                     <a href="{{route('detail', $artikelnanggung->slug)}}"
                       ><img
-                        src="{{asset('uploads/' . $artikelnanggung->gambar)}}"
+                        src="{{asset('public/uploads/' . $artikelnanggung->gambar)}}"
                         alt="Hero Image"
                         class="w-full"
                       />
@@ -41,7 +41,7 @@
                     <li class="flex relative">
                       <div class="w-24 phone:w-1/3 lg:w-1/2">
                         <a href="{{route('detail', $data->slug)}}"
-                          ><img class="w-full" src="{{asset('uploads/' . $data->gambar)}}" alt=""
+                          ><img class="w-full" src="{{asset('public/uploads/' . $data->gambar)}}" alt=""
                         /></a>
                         <a
                           href="{{ route('kategorishow', $data->kategori_id) }}"

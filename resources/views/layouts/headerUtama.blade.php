@@ -3,7 +3,7 @@
         <div class="flex items-center justify-between relative">
           <div class="px-4">
             <a href="{{ route('home') }}" class="block py-6"
-              ><img src="{{asset('Tailwind/src/pic/logo.png')}}" alt="logo"
+              ><img src="{{asset('public/Tailwind/src/pic/logo.png')}}" alt="logo"
             /></a>
           </div>
           <div class="flex items-center px-4">

@@ -6,7 +6,7 @@
                   <li class="flex relative">
                     <div class="w-24 phone:w-60">
                       <a href="{{ route('detailvideo', $item->slug) }}">
-                        <img class="w-full" src="{{asset('uploads/' . $item->gambar_materi)}}" alt="" />
+                        <img class="w-full" src="{{asset('public/uploads/' . $item->gambar_materi)}}" alt="" />
                       </a>
                     </div>
                     <div class="w-2/3 pl-3">

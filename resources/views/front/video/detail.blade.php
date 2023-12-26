@@ -16,7 +16,7 @@
               <div class="grid lg:grid-cols-2 gap-4">
                 <div class="col-span-2 relative">
                   <img
-                    src="{{asset('uploads/' . $materidetail->gambar_materi)}}"
+                    src="{{asset('public/uploads/' . $materidetail->gambar_materi)}}"
                     alt="Hero Image"
                     class="w-full"
                   />

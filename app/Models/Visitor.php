@@ -15,6 +15,7 @@ class Visitor extends Model
     protected $fillable = ['ip', 'hits', 'visit_date'];
     public $timestamps = false;
     protected $hidden=[];
+    
     public static function hit()
     {
         $visitor = self::where('ip', request()->ip())->first();

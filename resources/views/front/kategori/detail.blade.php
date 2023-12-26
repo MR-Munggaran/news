@@ -30,7 +30,7 @@
                     <li class="flex relative">
                       <div class="w-24 phone:w-1/3 lg:w-1/2">
                         <a href="isi.html"
-                          ><img class="w-full" src="{{asset('uploads/' . $data->gambar)}}" alt=""
+                          ><img class="w-full" src="{{asset('public/uploads/' . $data->gambar)}}" alt=""
                         /></a>
                       </div>
                       <div class="w-2/3 pl-3">
