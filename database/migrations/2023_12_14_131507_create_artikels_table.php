@@ -19,7 +19,7 @@ return new class extends Migration
             $table->integer('kategori_id');
             $table->integer('user_id');
             $table->string('gambar');
-            $table->boolean('is-active');
+            $table->boolean('is_active');
             $table->integer('views');
             $table->timestamps();
         });
