@@ -18,7 +18,7 @@
                     <a href="{{route('detail', $topArtikelFirst->slug)}}">
                       <img
                         class="w-24 phone:w-1/3 md:w-full object-cover"
-                        src="{{asset('public/uploads/' . $topArtikelFirst->gambar)}}"
+                        src="{{asset('uploads/' . $topArtikelFirst->gambar)}}"
                         alt=""
                       />
                     </a>
@@ -58,7 +58,7 @@
                     <li class="flex relative">
                       <div class="w-24 phone:w-1/3">
                         <a href="{{route('detail', $item->slug)}}"
-                          ><img class="w-full" src="{{asset('public/uploads/' . $item->gambar)}}" alt=""
+                          ><img class="w-full" src="{{asset('uploads/' . $item->gambar)}}" alt=""
                         /></a>
                         <a
                           href="{{ route('kategorishow', $item->kategori_id) }}l"

@@ -16,7 +16,7 @@
               <div class="grid lg:grid-cols-2 gap-4">
                 <div class="col-span-2 relative">
                   <img
-                    src="{{asset('public/uploads/' . $artikel->gambar)}}"
+                    src="{{asset('uploads/' . $artikel->gambar)}}"
                     alt="Hero Image"
                     class="w-full"
                   />
@@ -25,7 +25,7 @@
                   </p>
                   <br>
                   <img
-                    src="{{asset('public/uploads/' . $artikel->gambar)}}"
+                    src="{{asset('uploads/' . $artikel->gambar)}}"
                     alt="Hero Image"
                     class="w-full object-cover"
                   />
@@ -66,7 +66,7 @@
                       <li class="flex relative">
                         <a href="{{route('detail', $post->slug)}}">
                         <div class="w-24 phone:w-1/3 lg:w-1/2">
-                          <img class="w-full" src="{{asset('public/uploads/' . $post->gambar)}}" alt="" />
+                          <img class="w-full" src="{{asset('uploads/' . $post->gambar)}}" alt="" />
                           <a
                             href="#"
                             class="hidden absolute phone:block phone:bottom-1 phone:left-1.5 text-[0.52rem] bg-red-500 text-light p-1 sm:text-[0.65rem] md:max-lg:bottom-4 md:text-sm lg:max-xl:bottom-2 lg:text-[0.70rem] lg:py-[0.15rem] xl:py-0"

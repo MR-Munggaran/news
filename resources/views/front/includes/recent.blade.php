@@ -8,7 +8,7 @@
                   <li class="flex relative">
                     <a href="{{route('detail', $data->slug)}}">
                     <div class="w-24 phone:w-1/3">
-                      <img class="w-full" src="{{asset('public/uploads/' . $data->gambar)}}" alt="" /></a>
+                      <img class="w-full" src="{{asset('uploads/' . $data->gambar)}}" alt="" /></a>
                       <a
                         href="{{ route('kategorishow', $data->kategori_id) }}"
                         class="hidden absolute phone:block phone:bottom-1 phone:left-1.5 text-[0.52rem] bg-blue-500 text-light p-1 sm:text-[0.65rem] md:text-sm lg:text-[0.70rem] lg:py-[0.15rem] xl:py-0">{{$data->kategori->nama}}</a
